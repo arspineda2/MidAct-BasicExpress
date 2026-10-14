@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auji Brews | Contact</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body class="contact">
+  <nav class="navbar" aria-label="Main navigation">
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/menu">Menu</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact" aria-current="page">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-main contact-page">
+    <div class="rise">
+      <h1 class="script-title">Contact Us</h1>
+      <p class="lead">Questions, feedback, or a table for two? Drop us a note.</p>
+    </div>
+
+    <form id="contact-form" class="contact-form rise d1">
+      <div class="field">
+        <label for="name">Name:</label>
+        <input id="name" name="name" type="text" autocomplete="name" required>
+      </div>
+      <div class="field">
+        <label for="email">Email:</label>
+        <input id="email" name="email" type="email" autocomplete="email" required>
+      </div>
+      <div class="field stack">
+        <label for="message">Message:</label>
+        <textarea id="message" name="message" required></textarea>
+      </div>
+      <div class="form-actions">
+        <button class="btn btn-send" type="submit">Send</button>
+        <p id="form-note" class="form-note" role="status"></p>
+      </div>
+    </form>
+  </main>
+
+  <script src="/js/contact.js"></script>
+</body>
+</html>

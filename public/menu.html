@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Auji Brews | Menu</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="/css/style.css">
+</head>
+<body>
+  <nav class="navbar" aria-label="Main navigation">
+    <ul class="nav-links">
+      <li><a href="/">Home</a></li>
+      <li><a href="/menu" aria-current="page">Menu</a></li>
+      <li><a href="/about">About</a></li>
+      <li><a href="/contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <main class="page-main menu-page">
+    <h1 class="script-title rise">Our Menu</h1>
+    <p id="status" class="status" role="status"></p>
+    <ul id="menu-grid" class="menu-grid rise d1"></ul>
+  </main>
+
+  <dialog id="item-dialog" aria-labelledby="dialog-name">
+    <div class="dialog-body">
+      <img id="dialog-img" src="" alt="">
+      <div class="dialog-text">
+        <h2 id="dialog-name"></h2>
+        <p id="dialog-desc"></p>
+        <p class="price" id="dialog-price"></p>
+        <button class="btn dialog-close" id="dialog-close" type="button">Close</button>
+      </div>
+    </div>
+  </dialog>
+
+  <script src="/js/menu.js"></script>
+</body>
+</html>
